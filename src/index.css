@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #FE68A6;
+  --color-secondary: #E8CDCD;
+  --color-text-primary: #454545;
+  --color-text-secondary: #8a8a8a;
+  --color-white: #ffffff;
+  --color-white-50: #ffffff80;
+  --color-white-80: #ffffffcf;
+}
+
+@font-face {
+  font-family: 'Lexend';
+  src: url('./assets/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  font-family: Lexend, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+}
