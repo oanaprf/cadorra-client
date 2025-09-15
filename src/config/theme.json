@@ -1,0 +1,26 @@
+{
+  "fontFamily": "Lexend",
+  "Button": {
+    "colorTextLightSolid": "#CDA7B6",
+    "colorPrimary": "#ffffff",
+    "colorPrimaryHover": "#ffffffd9",
+    "colorPrimaryActive": "#ffffffd9",
+    "borderRadius": 50,
+    "borderRadiusLG": 50,
+    "primaryShadow": "none"
+  },
+  "Input": {
+    "activeBorderColor": "#ffffff",
+    "hoverBorderColor": "#ffffff",
+    "colorBorder": "#ffffff",
+    "borderRadius": 15,
+    "borderRadiusLG": 15,
+    "colorText": "#413E3E",
+    "activeShadow": "0 0 0 2px #CDA7B633"
+  },
+  "Tooltip": {
+    "colorBgSpotlight": "#FFFFFF33",
+    "colorTextLightSolid": "#FFFFFF",
+    "boxShadowSecondary": " 0 6px 16px 0 rgba(0, 0, 0, 0.02)"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "home": {
+    "title": "The only wishlist you need.",
+    "description": "Save gift ideas, track must-haves, and share with friends — making every occasion special and every wish unforgettable.",
+    "buttonText": "Join the waitlist",
+    "inputPlaceholder": "Enter your email",
+    "emailRequired": "Email is required",
+    "invalidEmail": "Invalid email",
+    "emailSuccessfullyAdded": "Email successfully added to the waitlist",
+    "tooltipTextRow1": "No spam. Just a launch update.",
+    "tooltipTextRow2": "By joining the waitlist, you agree to our ",
+    "tooltipTextRow3": "Privacy Policy.",
+    "stepsTitle": "How it works",
+    "steps": [
+      {
+        "title": "Add items to your wishlist",
+        "description": "Easily collect everything you’re dreaming of, and keep it safe in one organized list you can revisit anytime."
+      },
+      {
+        "title": "Share it with anyone",
+        "description": "Effortlessly share your curated wishlist with friends, family, or followers, by sending them a link to your list."
+      },
+      {
+        "title": "Enjoy the gifts",
+        "description": "Sit back and enjoy thoughtful gifts you genuinely love, while avoiding duplicates and unwanted surprises."
+      }
+    ],
+    "footerTitle": "© Copyright 2025 cadorra.com",
+    "socialsLabel": "Find us on:",
+    "mockupsTitleRow1": "Wish. Add. Share.",
+    "mockupsTitleRow2": "Receive & enjoy."
+  }
+}

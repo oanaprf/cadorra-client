@@ -7,12 +7,21 @@
   --color-text-secondary: #8a8a8a;
   --color-white: #ffffff;
   --color-white-50: #ffffff80;
+  --color-white-70: #ffffffb3;
   --color-white-80: #ffffffcf;
 }
 
 @font-face {
   font-family: 'Lexend';
   src: url('./assets/fonts/Lexend-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -33,4 +42,5 @@ body {
   margin: 0;
   min-width: 100vw;
   min-height: 100vh;
+  color: var(--color-white);
 }
