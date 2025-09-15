@@ -8,7 +8,14 @@ const PrivacyPolicyTooltip = () => {
       <div>{t('home.tooltipTextRow1')}</div>
       <div>
         <span>{t('home.tooltipTextRow2')}</span>
-        <a className="">{t('home.tooltipTextRow3')}</a>
+        <a
+          href="/privacy-policy.html"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 underline hover:text-blue-800"
+        >
+          {t('home.tooltipTextRow3')}
+        </a>
       </div>
     </div>
   );
