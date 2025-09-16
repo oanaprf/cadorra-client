@@ -1,4 +1,4 @@
-import { httpsCallable } from 'firebase/functions';
+import { httpsCallable, type HttpsCallable } from 'firebase/functions';
 import { useState } from 'react';
 import { message } from 'antd';
 import { getFunctions } from 'firebase/functions';
@@ -23,10 +23,18 @@ const Waitlist = () => {
     if (!validateEmail(email)) return messageApi.error(t('home.invalidEmail'));
 
     const functions = getFunctions();
-    const callableAddEmailToWaitlist = httpsCallable(functions, 'addEmailToWaitlist');
-    await callableAddEmailToWaitlist({ email });
-    messageApi.success(t('home.emailSuccessfullyAdded'));
-    toggleInputVisible();
+    const callableAddEmailToWaitlist: HttpsCallable<
+      { email: string; location: string },
+      { success: boolean; message: string }
+    > = httpsCallable(functions, 'addEmailToWaitlist');
+    const { data } = await callableAddEmailToWaitlist({
+      email,
+      location: Intl.DateTimeFormat().resolvedOptions().timeZone,
+    });
+    if (data.success) {
+      await messageApi.success(t('home.emailSuccessfullyAdded'));
+      toggleInputVisible();
+    } else messageApi.error(data.message);
   };
 
   return isInputVisible ? (
