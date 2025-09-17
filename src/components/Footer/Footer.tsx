@@ -12,13 +12,7 @@ const Footer = () => {
       <div className="flex items-center gap-2">
         <span className="text-white-80 font-light">{t('home.socialsLabel')}</span>
         <InstagramOutlined className="text-2xl" />
-        <Popover
-          placement="top"
-          title={t('home.unsubscribeDescription')}
-          content={<UnsubscribePopover />}
-          trigger="click"
-          destroyOnHidden
-        >
+        <Popover placement="top" content={<UnsubscribePopover />} trigger="click" destroyOnHidden>
           <span className="text-white-80 ml-5 cursor-pointer text-sm font-light underline">
             {t('home.unsubscribeLabel')}
           </span>

@@ -32,21 +32,24 @@ const UnsubscribePopover = () => {
   };
 
   return (
-    <div className="flex gap-5">
-      {contextHolder}
-      <Input
-        type="text"
-        placeholder={t('home.inputPlaceholder')}
-        value={email}
-        onChange={onInputChange}
-      />
-      <Button
-        type="primary"
-        className="self-center"
-        shape="circle"
-        onClick={onInputSubmit}
-        icon={<CheckOutlined />}
-      />
+    <div className="flex flex-col gap-3">
+      <span className="text-white">{t('home.unsubscribeDescription')}</span>
+      <div className="flex gap-5">
+        {contextHolder}
+        <Input
+          type="text"
+          placeholder={t('home.inputPlaceholder')}
+          value={email}
+          onChange={onInputChange}
+        />
+        <Button
+          type="primary"
+          className="self-center"
+          shape="circle"
+          onClick={onInputSubmit}
+          icon={<CheckOutlined />}
+        />
+      </div>
     </div>
   );
 };
