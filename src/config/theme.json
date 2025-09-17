@@ -13,7 +13,7 @@
     "activeBorderColor": "#ffffff",
     "hoverBorderColor": "#ffffff",
     "colorBorder": "#ffffff",
-    "borderRadius": 15,
+    "borderRadius": 10,
     "borderRadiusLG": 15,
     "colorText": "#413E3E",
     "activeShadow": "0 0 0 2px #CDA7B633"
@@ -21,6 +21,11 @@
   "Tooltip": {
     "colorBgSpotlight": "#FFFFFF33",
     "colorTextLightSolid": "#FFFFFF",
+    "boxShadowSecondary": " 0 6px 16px 0 rgba(0, 0, 0, 0.02)"
+  },
+  "Popover": {
+    "colorBgElevated": "#FFFFFF33",
+    "colorTextHeading": "#FFFFFF",
     "boxShadowSecondary": " 0 6px 16px 0 rgba(0, 0, 0, 0.02)"
   }
 }

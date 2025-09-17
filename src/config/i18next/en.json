@@ -27,6 +27,9 @@
     ],
     "footerTitle": "© Copyright 2025 cadorra.com",
     "socialsLabel": "Find us on:",
+    "unsubscribeLabel": "Unsubscribe",
+    "unsubscribeDescription": "Unsubscribe from our launch updates",
+    "emailSuccessfullyUnsubscribed": "Email successfully unsubscribed from the waitlist",
     "mockupsTitleRow1": "Wish. Add. Share.",
     "mockupsTitleRow2": "Receive & enjoy."
   }
