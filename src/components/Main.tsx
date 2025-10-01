@@ -26,7 +26,7 @@ const Main = () => {
           </Tooltip>
         </div>
       </div>
-      <SvgSingleGift className="h-1/2 w-1/2" />
+      <SvgSingleGift className="floating h-1/2 w-1/2" />
     </div>
   );
 };

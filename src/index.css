@@ -44,3 +44,43 @@ body {
   min-height: 100vh;
   color: var(--color-white);
 }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes growFromCenter {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+.grow-from-center {
+  animation: growFromCenter 0.8s ease-out forwards;
+  transform-origin: center;
+}
+
+.svg-initial {
+  transform: scale(0);
+  opacity: 0;
+  transform-origin: center;
+}
+
+.svg-animated {
+  animation: growFromCenter 0.8s ease-out forwards;
+  transform-origin: center;
+}

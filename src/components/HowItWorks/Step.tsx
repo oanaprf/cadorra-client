@@ -1,4 +1,5 @@
 import useIsMobile from '../../utils/useIsMobile';
+import useIntersectionObserver from '../../utils/useIntersectionObserver';
 
 interface StepProps {
   number: number;
@@ -10,6 +11,11 @@ interface StepProps {
 
 const Step = ({ number, title, description, Svg, reverse }: StepProps) => {
   const isMobile = useIsMobile();
+  const { ref, isIntersecting } = useIntersectionObserver({
+    threshold: 0.3,
+    rootMargin: '0px 0px -50px 0px',
+  });
+
   return (
     <div
       className={`flex items-center md:gap-20 ${reverse && 'flex-col md:flex-row-reverse'} flex-col-reverse md:flex-row`}
@@ -23,7 +29,7 @@ const Step = ({ number, title, description, Svg, reverse }: StepProps) => {
           <p className="text-lg leading-[1.125] font-light">{description}</p>
         </div>
       </div>
-      <Svg className="h-2/3 w-2/3" />
+      <Svg ref={ref} className={`h-2/3 w-2/3 ${isIntersecting ? 'svg-animated' : 'svg-initial'}`} />
     </div>
   );
 };
